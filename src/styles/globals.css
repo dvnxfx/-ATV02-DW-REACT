@@ -1,42 +1,51 @@
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  --bg-color: #f0f0f0;
+  --text-color: #000000;
+  --accent-color: #000000;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Courier New', monospace; 
 }
 
-a {
-  color: inherit;
+
+.pandora-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pandora-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 4px solid #000;
+  padding-bottom: 20px;
+}
+
+.btn-retro {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px #000;
+  font-weight: bold;
+  cursor: pointer;
   text-decoration: none;
+  color: #000;
+  transition: 0.2s;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.btn-retro:hover {
+  background: #000;
+  color: #fff;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000;
 }
